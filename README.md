@@ -6,10 +6,6 @@ Orbitly is a premium dark-mode landing page template built with pure HTML, CSS, 
 
 ![Orbitly main preview](screenshots/01_mainpreview.png)
 
-![Orbitly full page](screenshots/02_fullscreenshot.png)
-
-![Orbitly mobile view](screenshots/03_mobileview.png)
-
 ## Features
 
 - Dark-mode-first responsive landing page
@@ -28,8 +24,6 @@ Orbitly is a premium dark-mode landing page template built with pure HTML, CSS, 
 - `assets/css/style.css` — page styles and design tokens
 - `assets/js/main.js` — interactive page behavior
 - `screenshots/01_mainpreview.png` — main preview image
-- `screenshots/02_fullscreenshot.png` — full-page preview
-- `screenshots/03_mobileview.png` — mobile preview
 
 ## Quick start
 
