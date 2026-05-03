@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbitly – Documentation</title>
+  <style>
+    :root {
+      --amber: #f59e0b;
+      --ink: #0d0f14;
+      --card: #181c28;
+      --border: rgba(255,255,255,.08);
+      --text-1: #f1f5f9;
+      --text-2: #94a3b8;
+      --text-3: #64748b;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--ink); color: var(--text-2); line-height: 1.7; }
+    .wrap { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; }
+    aside {
+      background: #12151f;
+      border-right: 1px solid var(--border);
+      padding: 40px 24px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar-logo {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--text-1);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sidebar-logo span {
+      background: var(--amber);
+      color: var(--ink);
+      width: 28px; height: 28px;
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .8rem;
+    }
+    aside h5 {
+      font-size: .7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--text-3);
+      margin-bottom: 10px;
+      margin-top: 24px;
+    }
+    aside ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+    aside a {
+      display: block;
+      padding: 7px 12px;
+      color: var(--text-3);
+      text-decoration: none;
+      font-size: .88rem;
+      border-radius: 6px;
+      transition: .2s;
+    }
+    aside a:hover { color: var(--text-1); background: rgba(255,255,255,.05); }
+
+    main { padding: 60px; max-width: 820px; }
+    h1 { font-size: 2.4rem; font-weight: 800; color: var(--text-1); margin-bottom: 12px; line-height: 1.2; }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-1);
+      margin: 52px 0 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    h3 { font-size: 1.1rem; font-weight: 700; color: var(--text-1); margin: 28px 0 10px; }
+    p { color: var(--text-2); margin-bottom: 14px; font-size: .95rem; }
+    code {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      background: rgba(245,158,11,.1);
+      color: var(--amber);
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-size: .85em;
+    }
+    pre {
+      background: #0a0c12;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+      overflow-x: auto;
+      margin: 18px 0;
+    }
+    pre code { background: none; padding: 0; color: #a5f3c4; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 10px;
+      background: rgba(245,158,11,.12);
+      color: var(--amber);
+      border: 1px solid rgba(245,158,11,.25);
+      border-radius: 50px;
+      font-size: .75rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .info-box {
+      background: rgba(99,102,241,.08);
+      border: 1px solid rgba(99,102,241,.2);
+      border-left: 3px solid #6366f1;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+      font-size: .9rem;
+    }
+    .success-box {
+      background: rgba(16,185,129,.07);
+      border: 1px solid rgba(16,185,129,.2);
+      border-left: 3px solid #10b981;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 18px 0;
+      font-size: .9rem;
+    }
+    table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: .88rem; }
+    th { background: #12151f; color: var(--text-1); font-weight: 700; padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); }
+    td { padding: 11px 16px; border-bottom: 1px solid rgba(255,255,255,.04); color: var(--text-2); }
+    tr:hover td { background: rgba(255,255,255,.02); }
+    .section-anchor { scroll-margin-top: 30px; }
+    ul.list { margin: 12px 0 18px 20px; display: flex; flex-direction: column; gap: 6px; }
+    ul.list li { color: var(--text-2); font-size: .92rem; }
+    ul.list li::marker { color: var(--amber); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="sidebar-logo">
+      <span>O</span>
+      Orbitly Docs
+    </div>
+    <h5>Getting Started</h5>
+    <ul>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#structure">File Structure</a></li>
+      <li><a href="#quickstart">Quick Start</a></li>
+    </ul>
+    <h5>Customization</h5>
+    <ul>
+      <li><a href="#colors">Colors & Tokens</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#sections">Sections Guide</a></li>
+      <li><a href="#pricing">Pricing Toggle</a></li>
+    </ul>
+    <h5>Advanced</h5>
+    <ul>
+      <li><a href="#animations">Animations</a></li>
+      <li><a href="#browser">Browser Support</a></li>
+      <li><a href="#credits">Credits</a></li>
+      <li><a href="#changelog">Changelog</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="badge">v1.0.0 — Released May 2026</div>
+    <h1>Orbitly Documentation</h1>
+    <p>Welcome! This guide covers everything you need to install, customize, and launch the Orbitly template. No build tools or Node.js required — it's pure HTML, CSS, and JavaScript.</p>
+
+    <div class="success-box">
+      ✅ <strong>Thank you for purchasing Orbitly.</strong> If you find it helpful, please leave a rating on Envato — it means the world to indie creators!
+    </div>
+
+    <!-- OVERVIEW -->
+    <h2 id="overview" class="section-anchor">Overview</h2>
+    <p>Orbitly is a premium single-page landing page template designed for <strong>SaaS products, project management tools, and creative agency software</strong>. It features:</p>
+    <ul class="list">
+      <li>Dark-mode-first design with amber/emerald accent palette</li>
+      <li>Fully responsive — mobile, tablet, and desktop optimized</li>
+      <li>Pure HTML/CSS/JS — no build step, no dependencies to install</li>
+      <li>CSS custom properties (design tokens) for one-line rebranding</li>
+      <li>Scroll-triggered animations using IntersectionObserver</li>
+      <li>Interactive pricing toggle (monthly/annual) with live price swap</li>
+      <li>FAQ accordion with accessible ARIA attributes</li>
+      <li>Animated counter statistics</li>
+      <li>Infinite logo marquee</li>
+      <li>Sticky glassmorphism navbar</li>
+      <li>Mobile hamburger menu with smooth slide-in panel</li>
+      <li>Working email validation on the CTA form</li>
+      <li>Scroll-to-top button</li>
+    </ul>
+
+    <!-- STRUCTURE -->
+    <h2 id="structure" class="section-anchor">File Structure</h2>
+    <pre><code>Orbitly/
+├── index.html              ← Main page
+├── documentation.html      ← This file
+└── assets/
+    ├── css/
+    │   └── style.css       ← All styles (design tokens at top)
+    └── js/
+        └── main.js         ← All scripts</code></pre>
+
+    <!-- QUICK START -->
+    <h2 id="quickstart" class="section-anchor">Quick Start</h2>
+    <h3>Option A — Open directly</h3>
+    <p>Just open <code>index.html</code> in any modern browser. No server needed.</p>
+
+    <h3>Option B — Local dev server (recommended)</h3>
+    <p>For a smoother development experience, serve it with any static server:</p>
+    <pre><code># Using Node (npx)
+npx serve .
+
+# Using Python 3
+python -m http.server 8080
+
+# Using VS Code
+Install the "Live Server" extension, then click "Go Live"</code></pre>
+
+    <!-- COLORS -->
+    <h2 id="colors" class="section-anchor">Colors & Design Tokens</h2>
+    <p>All design decisions live in CSS custom properties at the top of <code>style.css</code>. To rebrand the template, edit these variables:</p>
+    <pre><code>:root {
+  /* ── Core surfaces ───────────── */
+  --ink:        #0d0f14;   /* Page background */
+  --ink-light:  #1a1e2a;   /* Secondary bg */
+  --surface:    #12151f;   /* Sidebar/panels */
+  --card:       #181c28;   /* Card background */
+  --card-hover: #1f2436;   /* Card hover bg */
+  --border:     rgba(255,255,255,.07);
+  --border-hi:  rgba(255,255,255,.14);
+
+  /* ── Brand accent colors ──────── */
+  --amber:      #f59e0b;   /* PRIMARY accent */
+  --amber-dark: #d97706;   /* Button hover */
+  --emerald:    #10b981;   /* Success/positive */
+  --indigo:     #6366f1;   /* Secondary accent */
+  --sky:        #38bdf8;   /* Tertiary accent */
+}</code></pre>
+
+    <div class="info-box">
+      💡 <strong>Quick rebrand tip:</strong> Change <code>--amber</code> to your brand color (e.g., <code>#3b82f6</code> for blue, <code>#ec4899</code> for pink) and the entire template updates instantly.
+    </div>
+
+    <h3>Common color schemes</h3>
+    <table>
+      <tr><th>Theme</th><th>--amber value</th><th>--emerald value</th></tr>
+      <tr><td>Original (Amber)</td><td><code>#f59e0b</code></td><td><code>#10b981</code></td></tr>
+      <tr><td>Electric Blue</td><td><code>#3b82f6</code></td><td><code>#06b6d4</code></td></tr>
+      <tr><td>Hot Pink</td><td><code>#ec4899</code></td><td><code>#8b5cf6</code></td></tr>
+      <tr><td>Lime Green</td><td><code>#84cc16</code></td><td><code>#22d3ee</code></td></tr>
+    </table>
+
+    <!-- TYPOGRAPHY -->
+    <h2 id="typography" class="section-anchor">Typography</h2>
+    <p>Orbitly uses two Google Fonts loaded in <code>index.html</code>:</p>
+    <ul class="list">
+      <li><strong>Cabinet Grotesk</strong> (900, 800, 700) — Headings, logo, numbers</li>
+      <li><strong>Satoshi</strong> (400, 500, 700) — Body text, UI labels</li>
+    </ul>
+    <p>To swap fonts, update the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> and the <code>font-family</code> declarations in <code>style.css</code>.</p>
+
+    <!-- SECTIONS -->
+    <h2 id="sections" class="section-anchor">Sections Guide</h2>
+    <h3>Changing the logo</h3>
+    <p>Search for <code>Orbitly</code> in <code>index.html</code> to find all logo instances (navbar and footer). Update the text and optionally replace the Font Awesome icon inside <code>.logo-icon</code>.</p>
+
+    <h3>Updating navigation links</h3>
+    <p>Edit the <code>&lt;ul class="nav-list"&gt;</code> inside the <code>&lt;header&gt;</code>. All <code>href</code> values use anchor IDs matching section IDs (e.g., <code>#features</code> scrolls to <code>&lt;section id="features"&gt;</code>).</p>
+
+    <h3>Trusted brands marquee</h3>
+    <p>Find the <code>.marquee-track</code> element and update the <code>&lt;span&gt;</code> text labels. The track is duplicated to create a seamless loop — always keep the full list duplicated.</p>
+
+    <h3>Stats numbers</h3>
+    <p>Each counter has a <code>data-count</code> attribute that drives the animation:</p>
+    <pre><code>&lt;div class="stat-number" data-count="12000"&gt;0&lt;/div&gt;</code></pre>
+
+    <h3>Feature cards</h3>
+    <p>Add or remove <code>.feat-card</code> elements inside <code>.feature-cards-grid</code>. Icons use Font Awesome classes. The grid auto-adjusts to 2 columns.</p>
+
+    <h3>Testimonial cards</h3>
+    <p>Each <code>.t-card</code> can be duplicated. Update the gradient in <code>style</code> on <code>.t-avatar</code> for unique author colors.</p>
+
+    <h3>Blog thumbnails</h3>
+    <p>Blog cards use CSS gradient backgrounds (<code>.art-1</code> through <code>.art-4</code>). To use real images, replace the <code>&lt;div class="blog-thumb-art art-N"&gt;</code> with an <code>&lt;img&gt;</code> tag:</p>
+    <pre><code>&lt;div class="blog-thumb"&gt;
+  &lt;img src="assets/images/blog1.jpg" alt="Post title" loading="lazy"&gt;
+  &lt;span class="blog-tag"&gt;Category&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+    <h3>Team section</h3>
+    <p>The template doesn't include a team section by default to keep the layout flexible. To add one, copy the pattern from the previous version and paste it before the Blog section. Add team images in <code>assets/images/</code>.</p>
+
+    <!-- PRICING -->
+    <h2 id="pricing" class="section-anchor">Pricing Toggle</h2>
+    <p>The monthly/annual toggle is driven by <code>data-monthly</code> and <code>data-annual</code> attributes on each <code>.p-amount</code> element:</p>
+    <pre><code>&lt;span class="p-amount" data-monthly="49" data-annual="34"&gt;$49&lt;/span&gt;</code></pre>
+    <p>The JavaScript in <code>main.js</code> swaps these automatically when the toggle is checked. For free-tier cards, set both values to <code>0</code> and the script will always display <code>$0</code>.</p>
+
+    <!-- ANIMATIONS -->
+    <h2 id="animations" class="section-anchor">Animations</h2>
+    <p>Any element with a <code>data-animate</code> attribute will fade in when scrolled into view:</p>
+    <pre><code>&lt;!-- Fade up (default) --&gt;
+&lt;div data-animate="fade-up"&gt;...&lt;/div&gt;
+
+&lt;!-- Slide in from right --&gt;
+&lt;div data-animate="fade-left"&gt;...&lt;/div&gt;
+
+&lt;!-- Stagger delay (CSS variable) --&gt;
+&lt;div data-animate="fade-up" style="--delay: .2s"&gt;...&lt;/div&gt;</code></pre>
+    <p>The observer uses a 12% threshold with a 40px bottom margin. To disable animations for a specific element, simply remove the <code>data-animate</code> attribute and add <code>opacity: 1; transform: none;</code> in CSS.</p>
+
+    <!-- BROWSER SUPPORT -->
+    <h2 id="browser" class="section-anchor">Browser Support</h2>
+    <table>
+      <tr><th>Browser</th><th>Support</th></tr>
+      <tr><td>Chrome 90+</td><td>✅ Full</td></tr>
+      <tr><td>Firefox 88+</td><td>✅ Full</td></tr>
+      <tr><td>Safari 14+</td><td>✅ Full</td></tr>
+      <tr><td>Edge 90+</td><td>✅ Full</td></tr>
+      <tr><td>Safari iOS 14+</td><td>✅ Full</td></tr>
+      <tr><td>Chrome Android</td><td>✅ Full</td></tr>
+      <tr><td>Internet Explorer</td><td>❌ Not supported</td></tr>
+    </table>
+
+    <!-- CREDITS -->
+    <h2 id="credits" class="section-anchor">Credits</h2>
+    <ul class="list">
+      <li><strong>Fonts:</strong> <a href="https://fonts.google.com" style="color:var(--amber)">Google Fonts</a> — Cabinet Grotesk &amp; Satoshi (SIL Open Font License)</li>
+      <li><strong>Icons:</strong> <a href="https://fontawesome.com" style="color:var(--amber)">Font Awesome 6.5</a> (Free tier — CC BY 4.0 &amp; MIT License)</li>
+      <li><strong>No stock images used</strong> — all visuals are CSS-generated. You are free to replace with licensed images.</li>
+    </ul>
+
+    <!-- CHANGELOG -->
+    <h2 id="changelog" class="section-anchor">Changelog</h2>
+    <h3>v1.0.0 — May 2026</h3>
+    <ul class="list">
+      <li>Initial release</li>
+      <li>Dark-mode design with amber/emerald tokens</li>
+      <li>Full responsive layout (mobile, tablet, desktop)</li>
+      <li>CSS-only dashboard mockup illustration</li>
+      <li>Pricing toggle with annual/monthly switch</li>
+      <li>Scroll-triggered animations via IntersectionObserver</li>
+      <li>Animated stat counters</li>
+      <li>FAQ accordion with ARIA support</li>
+      <li>Infinite logo marquee</li>
+      <li>Mobile nav with slide-in panel</li>
+    </ul>
+
+    <div class="info-box" style="margin-top:48px">
+      📬 Need help? Contact support at <strong>support@orbitly.io</strong> (placeholder — update before submission). Typical response time: &lt; 24 hours.
+    </div>
+  </main>
+</div>
+</body>
+</html>

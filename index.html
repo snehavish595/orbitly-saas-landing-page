@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Orbitly – The all-in-one project management & team collaboration platform built for modern agencies and studios." />
+  <title>Orbitly | Project Management for Creative Teams</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Orbitly Home">
+        <span class="logo-icon"><i class="fas fa-circle-nodes"></i></span>
+        Orbitly
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#features"   class="nav-link">Features</a></li>
+          <li><a href="#how"        class="nav-link">How It Works</a></li>
+          <li><a href="#pricing"    class="nav-link">Pricing</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#faq"        class="nav-link">FAQ</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="#" class="btn btn-ghost">Log In</a>
+          <a href="#pricing" class="btn btn-primary">Start Free Trial</a>
+        </div>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         HERO
+    ========================================================= -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content" data-animate="fade-up">
+          <div class="eyebrow-badge">
+            <span class="badge-dot"></span>
+            New in v3.0 — Timeline View &amp; AI Task Assist
+          </div>
+          <h1>
+            Where Creative<br />
+            Teams <em>Ship</em> Faster
+          </h1>
+          <p class="hero-lead">
+            Orbitly unifies your projects, briefs, timelines, and client feedback in one frictionless workspace — so your studio stops juggling tools and starts delivering.
+          </p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary btn-xl">
+              Get Started Free
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#how" class="btn btn-outline btn-xl">
+              <i class="fas fa-play-circle"></i>
+              Watch 2-min Demo
+            </a>
+          </div>
+          <div class="hero-social-proof">
+            <div class="avatar-stack">
+              <div class="avatar" style="background:#f59e0b">A</div>
+              <div class="avatar" style="background:#10b981">S</div>
+              <div class="avatar" style="background:#3b82f6">R</div>
+              <div class="avatar" style="background:#ec4899">K</div>
+              <div class="avatar" style="background:#8b5cf6">M</div>
+            </div>
+            <span>Loved by <strong>12,000+</strong> creative professionals</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-animate="fade-left">
+          <div class="dashboard-mockup">
+            <div class="mock-topbar">
+              <div class="mock-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="mock-title">Orbitly Dashboard</span>
+              <span class="mock-badge live">● Live</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-nav-item active"><i class="fas fa-house"></i></div>
+                <div class="mock-nav-item"><i class="fas fa-diagram-project"></i></div>
+                <div class="mock-nav-item"><i class="fas fa-calendar-days"></i></div>
+                <div class="mock-nav-item"><i class="fas fa-inbox"></i></div>
+                <div class="mock-nav-item"><i class="fas fa-chart-line"></i></div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-header-row">
+                  <div>
+                    <div class="mock-h">Good morning, Alex 👋</div>
+                    <div class="mock-sub">3 tasks due today</div>
+                  </div>
+                  <div class="mock-avatar-sm">A</div>
+                </div>
+                <div class="mock-stats-row">
+                  <div class="mock-stat">
+                    <div class="mock-stat-n">24</div>
+                    <div class="mock-stat-l">Active Projects</div>
+                  </div>
+                  <div class="mock-stat accent">
+                    <div class="mock-stat-n">98%</div>
+                    <div class="mock-stat-l">On-Time Rate</div>
+                  </div>
+                  <div class="mock-stat">
+                    <div class="mock-stat-n">7</div>
+                    <div class="mock-stat-l">Pending Reviews</div>
+                  </div>
+                </div>
+                <div class="mock-section-title">Active Sprints</div>
+                <div class="mock-tasks">
+                  <div class="mock-task">
+                    <div class="mock-task-dot green"></div>
+                    <div class="mock-task-info">
+                      <div class="mock-task-name">Brand Identity – Finch Co.</div>
+                      <div class="mock-task-progress">
+                        <div class="mock-bar"><div class="mock-fill" style="width:78%"></div></div>
+                        <span>78%</span>
+                      </div>
+                    </div>
+                    <div class="mock-tag design">Design</div>
+                  </div>
+                  <div class="mock-task">
+                    <div class="mock-task-dot amber"></div>
+                    <div class="mock-task-info">
+                      <div class="mock-task-name">Website Redesign – Volta</div>
+                      <div class="mock-task-progress">
+                        <div class="mock-bar"><div class="mock-fill" style="width:45%"></div></div>
+                        <span>45%</span>
+                      </div>
+                    </div>
+                    <div class="mock-tag dev">Dev</div>
+                  </div>
+                  <div class="mock-task">
+                    <div class="mock-task-dot blue"></div>
+                    <div class="mock-task-info">
+                      <div class="mock-task-name">Campaign Assets – Helix</div>
+                      <div class="mock-task-progress">
+                        <div class="mock-bar"><div class="mock-fill" style="width:91%"></div></div>
+                        <span>91%</span>
+                      </div>
+                    </div>
+                    <div class="mock-tag content">Content</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Floating notification cards -->
+          <div class="float-card float-card--1" data-animate="float">
+            <i class="fas fa-check-circle" style="color:#10b981"></i>
+            <span>Milestone approved by client</span>
+          </div>
+          <div class="float-card float-card--2" data-animate="float" style="animation-delay:.4s">
+            <i class="fas fa-robot" style="color:#6366f1"></i>
+            <span>AI: 3 tasks auto-scheduled</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trusted logos -->
+      <div class="logo-bar container">
+        <p class="logo-bar-label">Trusted by teams at</p>
+        <div class="logo-marquee">
+          <div class="marquee-track">
+            <span>Accenture</span>
+            <span>Shopify</span>
+            <span>Wunderman</span>
+            <span>R/GA</span>
+            <span>IDEO</span>
+            <span>Frog Design</span>
+            <span>Instrument</span>
+            <span>Huge</span>
+            <span>Accenture</span>
+            <span>Shopify</span>
+            <span>Wunderman</span>
+            <span>R/GA</span>
+            <span>IDEO</span>
+            <span>Frog Design</span>
+            <span>Instrument</span>
+            <span>Huge</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         STATS BAND
+    ========================================================= -->
+    <section class="stats-band">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-count="12000">0</div>
+          <div class="stat-label">Teams worldwide</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="98">0</div>
+          <div class="stat-label">% on-time delivery avg.</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="4">0</div>
+          <div class="stat-label">x faster project setup</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number" data-count="99">0</div>
+          <div class="stat-label">% uptime SLA</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FEATURES
+    ========================================================= -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="eyebrow-tag">Everything you need</div>
+          <h2>Built for the way agencies <em>actually</em> work</h2>
+          <p>From the first brief to final delivery — Orbitly handles every layer of your creative workflow.</p>
+        </div>
+
+        <div class="features-layout">
+          <!-- Big feature left -->
+          <div class="feature-big" data-animate="fade-up">
+            <div class="feature-big-icon">
+              <i class="fas fa-timeline"></i>
+            </div>
+            <div class="feature-big-tag">Flagship</div>
+            <h3>Visual Timeline & Gantt</h3>
+            <p>Drag, drop, and deadline with confidence. Orbitly's interactive Gantt view syncs across your whole team in real time — so no one misses a beat or a milestone.</p>
+            <ul class="feature-list">
+              <li><i class="fas fa-check"></i> Drag-to-reschedule dependencies</li>
+              <li><i class="fas fa-check"></i> Critical path highlighting</li>
+              <li><i class="fas fa-check"></i> Milestone approvals with client sign-off</li>
+            </ul>
+          </div>
+
+          <!-- Feature card grid right -->
+          <div class="feature-cards-grid">
+            <div class="feat-card" data-animate="fade-up" style="--delay:.1s">
+              <div class="feat-icon"><i class="fas fa-robot"></i></div>
+              <h4>AI Task Assist</h4>
+              <p>Auto-generate task breakdowns from a project brief. Orbitly reads your scope and suggests subtasks, time estimates, and assignments.</p>
+            </div>
+            <div class="feat-card" data-animate="fade-up" style="--delay:.2s">
+              <div class="feat-icon"><i class="fas fa-comments"></i></div>
+              <h4>Client Feedback Hub</h4>
+              <p>Collect structured feedback directly on designs and docs. No more email chains — feedback lives alongside the work.</p>
+            </div>
+            <div class="feat-card" data-animate="fade-up" style="--delay:.3s">
+              <div class="feat-icon"><i class="fas fa-chart-column"></i></div>
+              <h4>Studio Analytics</h4>
+              <p>Track utilization, velocity, and profitability across every project. Know exactly where your team's time goes.</p>
+            </div>
+            <div class="feat-card" data-animate="fade-up" style="--delay:.4s">
+              <div class="feat-icon"><i class="fas fa-plug"></i></div>
+              <h4>60+ Integrations</h4>
+              <p>Figma, Slack, Notion, GitHub, HubSpot, and more. Orbitly plugs into the tools your team already loves.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary features row -->
+        <div class="secondary-features" data-animate="fade-up">
+          <div class="sec-feat">
+            <i class="fas fa-lock"></i>
+            <div>
+              <strong>Role-Based Access</strong>
+              <span>Fine-grained permissions for clients, freelancers, and internal staff.</span>
+            </div>
+          </div>
+          <div class="sec-feat">
+            <i class="fas fa-bell"></i>
+            <div>
+              <strong>Smart Notifications</strong>
+              <span>Get notified only on what matters. Silence the noise, amplify the signal.</span>
+            </div>
+          </div>
+          <div class="sec-feat">
+            <i class="fas fa-mobile-screen"></i>
+            <div>
+              <strong>Mobile-First Apps</strong>
+              <span>iOS &amp; Android apps so your team stays in sync wherever the work takes them.</span>
+            </div>
+          </div>
+          <div class="sec-feat">
+            <i class="fas fa-cloud-arrow-up"></i>
+            <div>
+              <strong>1 TB Asset Storage</strong>
+              <span>Keep all your creative assets organized and version-controlled in one place.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         HOW IT WORKS
+    ========================================================= -->
+    <section class="how" id="how">
+      <div class="how-bg"></div>
+      <div class="container">
+        <div class="section-header light" data-animate="fade-up">
+          <div class="eyebrow-tag light">Simple by design</div>
+          <h2>From zero to your first project in 5 minutes</h2>
+          <p>We stripped out the complexity so you can focus on the work, not the tooling.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card" data-animate="fade-up" style="--delay:.1s">
+            <div class="step-number">01</div>
+            <div class="step-icon"><i class="fas fa-building-circle-arrow-right"></i></div>
+            <h4>Create your workspace</h4>
+            <p>Set up your studio profile, invite your team, and configure client portals — all within the first minute.</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-card" data-animate="fade-up" style="--delay:.2s">
+            <div class="step-number">02</div>
+            <div class="step-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+            <h4>Import a brief or template</h4>
+            <p>Upload a project brief or choose from 80+ industry-proven templates. AI parses it and builds your project structure automatically.</p>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-card" data-animate="fade-up" style="--delay:.3s">
+            <div class="step-number">03</div>
+            <div class="step-icon"><i class="fas fa-rocket"></i></div>
+            <h4>Deliver with confidence</h4>
+            <p>Track progress, collect client approvals, and hit every deadline. Orbitly gives you the visibility to move fast without breaking things.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         INTEGRATIONS
+    ========================================================= -->
+    <section class="integrations">
+      <div class="container">
+        <div class="integ-inner" data-animate="fade-up">
+          <div class="integ-text">
+            <div class="eyebrow-tag">Integrations</div>
+            <h2>Plays nicely with your entire stack</h2>
+            <p>Connect the tools your team already uses — no complex setup required. Two-way sync keeps everything current automatically.</p>
+            <a href="#" class="btn btn-primary">Browse All Integrations</a>
+          </div>
+          <div class="integ-grid">
+            <div class="integ-logo" title="Figma"><i class="fab fa-figma"></i><span>Figma</span></div>
+            <div class="integ-logo" title="Slack"><i class="fab fa-slack"></i><span>Slack</span></div>
+            <div class="integ-logo" title="GitHub"><i class="fab fa-github"></i><span>GitHub</span></div>
+            <div class="integ-logo" title="Google Drive"><i class="fab fa-google-drive"></i><span>Drive</span></div>
+            <div class="integ-logo" title="Notion"><i class="fas fa-n"></i><span>Notion</span></div>
+            <div class="integ-logo" title="Stripe"><i class="fab fa-stripe"></i><span>Stripe</span></div>
+            <div class="integ-logo" title="HubSpot"><i class="fas fa-h"></i><span>HubSpot</span></div>
+            <div class="integ-logo" title="Zoom"><i class="fas fa-video"></i><span>Zoom</span></div>
+            <div class="integ-logo integ-more">+52 more</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         TESTIMONIALS
+    ========================================================= -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="eyebrow-tag">Real results</div>
+          <h2>What creative teams say about Orbitly</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <!-- Card 1 -->
+          <div class="t-card featured-t" data-animate="fade-up" style="--delay:.1s">
+            <div class="t-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="t-quote">"We cut our project setup time from two days to under an hour. The AI brief parser alone is worth the subscription — it's genuinely magic for an agency our size."</p>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">JL</div>
+              <div>
+                <strong>Jessica Lim</strong>
+                <span>Creative Director, Studio North</span>
+              </div>
+            </div>
+            <div class="t-metric">
+              <strong>12×</strong>
+              <span>faster project kickoffs</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="t-card" data-animate="fade-up" style="--delay:.2s">
+            <div class="t-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="t-quote">"Client feedback used to be a disaster of reply-all emails. Now our clients annotate directly in Orbitly and we see it instantly. Approval cycles went from 2 weeks to 3 days."</p>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#6366f1,#06b6d4)">RM</div>
+              <div>
+                <strong>Raj Mehta</strong>
+                <span>Founder, Aperture Digital</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="t-card" data-animate="fade-up" style="--delay:.3s">
+            <div class="t-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+            </div>
+            <p class="t-quote">"The analytics dashboard showed us we were underpricing retainer clients by 30%. That insight alone paid for Orbitly for two years."</p>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#10b981,#3b82f6)">SW</div>
+              <div>
+                <strong>Sofia Winters</strong>
+                <span>Operations Lead, Glyph Agency</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="t-card" data-animate="fade-up" style="--delay:.35s">
+            <div class="t-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="t-quote">"The Figma and Slack integrations are seamless. Everything flows together — I no longer have to chase my team for updates. They come to me."</p>
+            <div class="t-author">
+              <div class="t-avatar" style="background:linear-gradient(135deg,#ec4899,#f59e0b)">DK</div>
+              <div>
+                <strong>Dmitri Koval</strong>
+                <span>Product Manager, Forma Labs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PRICING
+    ========================================================= -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="eyebrow-tag">Transparent pricing</div>
+          <h2>Honest plans for every team size</h2>
+          <p>No hidden fees. Cancel anytime. Every plan includes a 14-day free trial.</p>
+        </div>
+
+        <div class="pricing-toggle-wrap" data-animate="fade-up">
+          <span>Monthly</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="billing-toggle" />
+            <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          </label>
+          <span>Annual <em class="save-badge">Save 30%</em></span>
+        </div>
+
+        <div class="pricing-grid" data-animate="fade-up">
+          <!-- Free -->
+          <div class="p-card">
+            <div class="p-plan">Free</div>
+            <div class="p-price">
+              <span class="p-amount" data-monthly="0" data-annual="0">$0</span>
+              <span class="p-period">/month</span>
+            </div>
+            <p class="p-desc">Perfect for freelancers getting started.</p>
+            <ul class="p-features">
+              <li><i class="fas fa-check"></i> 3 active projects</li>
+              <li><i class="fas fa-check"></i> 1 GB storage</li>
+              <li><i class="fas fa-check"></i> Kanban &amp; list view</li>
+              <li><i class="fas fa-check"></i> Up to 5 team members</li>
+              <li class="disabled"><i class="fas fa-times"></i> Timeline &amp; Gantt</li>
+              <li class="disabled"><i class="fas fa-times"></i> Client portals</li>
+              <li class="disabled"><i class="fas fa-times"></i> AI Task Assist</li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-block">Get Started Free</a>
+          </div>
+
+          <!-- Studio — Featured -->
+          <div class="p-card featured">
+            <div class="p-popular">Most Popular</div>
+            <div class="p-plan">Studio</div>
+            <div class="p-price">
+              <span class="p-amount" data-monthly="49" data-annual="34">$49</span>
+              <span class="p-period">/month per workspace</span>
+            </div>
+            <p class="p-desc">The full toolkit for growing creative agencies.</p>
+            <ul class="p-features">
+              <li><i class="fas fa-check"></i> Unlimited projects</li>
+              <li><i class="fas fa-check"></i> 200 GB storage</li>
+              <li><i class="fas fa-check"></i> All views incl. Timeline &amp; Gantt</li>
+              <li><i class="fas fa-check"></i> Up to 50 team members</li>
+              <li><i class="fas fa-check"></i> Client portals (unlimited)</li>
+              <li><i class="fas fa-check"></i> AI Task Assist</li>
+              <li><i class="fas fa-check"></i> Priority support</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Start 14-Day Trial</a>
+            <p class="p-note">No credit card required</p>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="p-card">
+            <div class="p-plan">Enterprise</div>
+            <div class="p-price">
+              <span class="p-amount">Custom</span>
+            </div>
+            <p class="p-desc">For large agencies and in-house teams needing scale and control.</p>
+            <ul class="p-features">
+              <li><i class="fas fa-check"></i> Everything in Studio</li>
+              <li><i class="fas fa-check"></i> Unlimited storage</li>
+              <li><i class="fas fa-check"></i> Unlimited members</li>
+              <li><i class="fas fa-check"></i> SSO &amp; SAML</li>
+              <li><i class="fas fa-check"></i> Dedicated account manager</li>
+              <li><i class="fas fa-check"></i> Custom SLA</li>
+              <li><i class="fas fa-check"></i> On-premise option</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Talk to Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FAQ
+    ========================================================= -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="faq-inner">
+          <div class="faq-left" data-animate="fade-up">
+            <div class="eyebrow-tag">FAQ</div>
+            <h2>Questions? We've got answers.</h2>
+            <p>Can't find what you're looking for? <a href="#contact" class="text-link">Reach out to our team</a> — we typically reply in under 2 hours.</p>
+          </div>
+          <div class="faq-right">
+            <div class="faq-item" data-animate="fade-up" style="--delay:.1s">
+              <button class="faq-question" aria-expanded="false">
+                <span>Does Orbitly work for non-design teams?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Absolutely. While Orbitly is optimized for creative studios, marketing agencies, and product teams love it too. Any team managing complex, deadline-driven projects will find it valuable. Many software agencies, content teams, and event companies use Orbitly daily.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-animate="fade-up" style="--delay:.15s">
+              <button class="faq-question" aria-expanded="false">
+                <span>How does the 14-day trial work?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>You get full access to the Studio plan for 14 days — no credit card required. If you choose not to upgrade, your workspace moves to the Free plan automatically. Your data is always yours.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-animate="fade-up" style="--delay:.2s">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can clients access Orbitly without a paid seat?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Yes. Client portal access is free and unlimited on the Studio plan. Clients get a dedicated view to leave feedback, approve deliverables, and track progress — without seeing your internal conversations or pricing.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-animate="fade-up" style="--delay:.25s">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is my data secure?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Security is foundational to Orbitly. We use AES-256 encryption at rest and TLS 1.3 in transit. Our infrastructure is SOC 2 Type II certified, and we offer GDPR-compliant data handling for EU customers. Full security whitepaper available on request.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-animate="fade-up" style="--delay:.3s">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I migrate from Asana, ClickUp, or Monday.com?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>Yes — Orbitly's import wizard handles migrations from Asana, ClickUp, Trello, Monday.com, Basecamp, and Notion. Most migrations complete in under 10 minutes. Our onboarding team also offers free migration concierge for Enterprise plans.</p>
+              </div>
+            </div>
+            <div class="faq-item" data-animate="fade-up" style="--delay:.35s">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you offer nonprofit or education discounts?</span>
+                <span class="faq-icon"><i class="fas fa-plus"></i></span>
+              </button>
+              <div class="faq-answer" role="region">
+                <p>We offer 50% off the Studio plan for registered nonprofits and 100% free access for accredited educational institutions. Contact our team with verification documents to apply.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         BLOG
+    ========================================================= -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <div class="eyebrow-tag">Resources</div>
+          <h2>From the Orbitly Studio</h2>
+          <p>Playbooks, case studies, and deep-dives for creative team leads.</p>
+        </div>
+
+        <div class="blog-grid">
+          <!-- Featured post -->
+          <article class="blog-card blog-card--featured" data-animate="fade-up">
+            <div class="blog-thumb">
+              <div class="blog-thumb-art art-1"></div>
+              <span class="blog-tag">Playbook</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span><i class="fas fa-calendar"></i> April 20, 2026</span>
+                <span><i class="fas fa-clock"></i> 12 min read</span>
+              </div>
+              <h3>The 2026 Agency Operations Playbook: How top studios cut overhead by 40%</h3>
+              <p>We interviewed 50 creative directors and distilled their operational secrets into a replicable framework any agency can use — regardless of size.</p>
+              <a href="#" class="read-link">Read full article <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <div class="blog-secondary">
+            <article class="blog-card blog-card--sm" data-animate="fade-up" style="--delay:.1s">
+              <div class="blog-thumb-sm art-2"></div>
+              <div class="blog-body-sm">
+                <span class="blog-tag">Case Study</span>
+                <h4>How Studio North 3× their project capacity without new hires</h4>
+                <div class="blog-meta">
+                  <span><i class="fas fa-clock"></i> 6 min read</span>
+                </div>
+                <a href="#" class="read-link">Read <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+            <article class="blog-card blog-card--sm" data-animate="fade-up" style="--delay:.2s">
+              <div class="blog-thumb-sm art-3"></div>
+              <div class="blog-body-sm">
+                <span class="blog-tag">Guide</span>
+                <h4>AI in Project Management: What's real and what's hype in 2026</h4>
+                <div class="blog-meta">
+                  <span><i class="fas fa-clock"></i> 8 min read</span>
+                </div>
+                <a href="#" class="read-link">Read <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+            <article class="blog-card blog-card--sm" data-animate="fade-up" style="--delay:.3s">
+              <div class="blog-thumb-sm art-4"></div>
+              <div class="blog-body-sm">
+                <span class="blog-tag">Tutorial</span>
+                <h4>Setting up client portals that actually impress: A step-by-step walkthrough</h4>
+                <div class="blog-meta">
+                  <span><i class="fas fa-clock"></i> 5 min read</span>
+                </div>
+                <a href="#" class="read-link">Read <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CTA SECTION
+    ========================================================= -->
+    <section class="cta-section" id="contact">
+      <div class="cta-blob cta-blob-1"></div>
+      <div class="cta-blob cta-blob-2"></div>
+      <div class="container">
+        <div class="cta-inner" data-animate="fade-up">
+          <div class="cta-badge"><i class="fas fa-circle-nodes"></i> Orbitly</div>
+          <h2>Ready to run a tighter ship?</h2>
+          <p>Join 12,000+ teams who manage better projects and happier clients with Orbitly. Your first 14 days are on us.</p>
+          <div class="cta-form">
+            <input type="email" placeholder="Enter your work email" class="cta-input" aria-label="Work email" />
+            <button class="btn btn-primary btn-xl cta-btn">Start Free Trial <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <p class="cta-footnote">No credit card required &nbsp;·&nbsp; Cancel anytime &nbsp;·&nbsp; Free forever plan available</p>
+          <div class="cta-trust">
+            <span><i class="fas fa-lock"></i> SOC 2 Certified</span>
+            <span><i class="fas fa-shield-halved"></i> GDPR Compliant</span>
+            <span><i class="fas fa-award"></i> G2 Leader 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">
+            <span class="logo-icon"><i class="fas fa-circle-nodes"></i></span>
+            Orbitly
+          </a>
+          <p>The project management platform built for creative teams who refuse to compromise.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h5>Product</h5>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Changelog</a></li>
+              <li><a href="#">Roadmap</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Use Cases</h5>
+            <ul>
+              <li><a href="#">Creative Agencies</a></li>
+              <li><a href="#">Marketing Teams</a></li>
+              <li><a href="#">Product Studios</a></li>
+              <li><a href="#">Freelancers</a></li>
+              <li><a href="#">Enterprises</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Resources</h5>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Webinars</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Status Page</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers <span class="hiring-badge">Hiring!</span></a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Orbitly Inc. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
